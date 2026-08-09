@@ -1,383 +1,761 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="AcademicAura — your little corner of learning. Explore organised study resources for Class 8 to 12, NEET and JEE."
-    >
+    <meta name="description"
+          content="AcademicAura — Your little corner of learning. Original study resources, notes, revision materials and practice resources for Class 8 to 12, NEET and JEE.">
 
-    <meta
-        name="theme-color"
-        content="#FAF7F2"
-    >
+    <meta name="theme-color" content="#FAF7F2">
 
-    <title>
-        AcademicAura — Your little corner of learning.
-    </title>
+    <title>AcademicAura — Your little corner of learning.</title>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=STIX+Two+Math&display=swap"
-        rel="stylesheet"
-    >
-
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
-
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 
 <body>
 
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
 
-<header class="site-header">
+    <header class="site-header">
 
-    <div class="container">
+        <div class="container header-inner">
 
-        <a
-            href="index.html"
-            class="logo"
-        >
-            AcademicAura
-        </a>
+            <a href="index.html" class="brand">
+                <span class="brand-mark">A</span>
+
+                <span class="brand-name">
+                    AcademicAura
+                </span>
+            </a>
 
 
-        <nav
-            class="desktop-nav"
-            aria-label="Main navigation"
-        >
+            <nav class="desktop-nav" aria-label="Main navigation">
 
-            <a href="#">Home</a>
+                <a href="#home">Home</a>
 
-            <a href="#">Classes</a>
+                <a href="#classes">Classes</a>
 
-            <a href="#">NEET</a>
+                <a href="#neet">NEET</a>
 
-            <a href="#">JEE</a>
+                <a href="#jee">JEE</a>
 
-            <a href="#">Resources</a>
+                <a href="#resources">Resources</a>
 
-            <a href="#">Study Corner</a>
+                <a href="#study-corner">Study Corner</a>
+
+            </nav>
+
+
+            <div class="header-actions">
+
+                <button class="icon-button"
+                        aria-label="Search"
+                        type="button">
+                    <svg viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <circle cx="11"
+                                cy="11"
+                                r="6.5"></circle>
+                        <path d="M16 16L21 21"></path>
+                    </svg>
+                </button>
+
+
+                <a href="#classes"
+                   class="header-cta">
+                    Get Started
+                </a>
+
+
+                <button class="menu-button"
+                        type="button"
+                        aria-label="Open menu"
+                        aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <nav class="mobile-nav"
+             aria-label="Mobile navigation">
+
+            <a href="#home">Home</a>
+            <a href="#classes">Classes</a>
+            <a href="#neet">NEET</a>
+            <a href="#jee">JEE</a>
+            <a href="#resources">Resources</a>
+            <a href="#study-corner">Study Corner</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
 
         </nav>
 
+    </header>
 
-        <div class="header-actions">
 
-            <button
-                class="icon-button"
-                aria-label="Search"
-                type="button"
-            >
-                ⌕
-            </button>
+    <main id="home">
 
 
-            <button
-                class="menu-button"
-                aria-label="Open menu"
-                type="button"
-            >
-                ☰
-            </button>
+        <!-- ============================= -->
+        <!-- HERO -->
+        <!-- ============================= -->
 
+        <section class="hero">
 
-            <a
-                href="#"
-                class="button button-primary"
-            >
-                Get Started
-            </a>
+            <div class="container hero-grid">
 
-        </div>
+                <div class="hero-content">
 
-    </div>
+                    <span class="eyebrow">
+                        ACADEMICAURA
+                    </span>
 
-</header>
 
+                    <h1>
+                        Your little corner
+                        <span>of learning.</span>
+                    </h1>
 
 
-<main>
+                    <p class="hero-description">
+                        Carefully organised notes, revision resources
+                        and practice materials for students from
+                        Class 8 to 12, NEET &amp; JEE.
+                    </p>
 
 
-<section class="hero">
+                    <div class="hero-buttons">
 
-    <div class="container hero-content">
+                        <a href="#classes"
+                           class="button button-primary">
+                            Explore Resources
+                            <span>→</span>
+                        </a>
 
-        <p class="eyebrow">
-            ACADEMICAURA
-        </p>
+                        <a href="#classes"
+                           class="button button-secondary">
+                            Start Learning
+                        </a>
 
+                    </div>
 
-        <h1>
-            Your little corner of learning.
-        </h1>
 
+                    <p class="hero-support">
+                        Study smarter. Learn beautifully.
+                    </p>
 
-        <p class="hero-heading">
+                </div>
 
-            Learn smarter.<br>
 
-            Revise better.<br>
+                <!-- Hero visual -->
 
-            Achieve more.
+                <div class="hero-visual"
+                     aria-hidden="true">
 
-        </p>
+                    <div class="paper-card">
 
+                        <div class="paper-top">
+                            <span>ACADEMICAURA</span>
+                            <span>✦</span>
+                        </div>
 
-        <p class="hero-description">
+                        <div class="paper-title">
+                            Study
+                            <br>
+                            beautifully.
+                        </div>
 
-            Carefully organised notes, revision resources
-            and practice materials for students from Class 8
-            to 12, NEET & JEE.
+                        <div class="paper-line"></div>
 
-        </p>
+                        <div class="mini-notes">
 
+                            <div>
+                                <span class="mini-dot blue"></span>
+                                Learn
+                            </div>
 
-        <div class="hero-actions">
+                            <div>
+                                <span class="mini-dot peach"></span>
+                                Revise
+                            </div>
 
-            <a
-                href="#"
-                class="button button-primary"
-            >
-                Explore Resources →
-            </a>
+                            <div>
+                                <span class="mini-dot lavender"></span>
+                                Practice
+                            </div>
 
+                        </div>
 
-            <a
-                href="#"
-                class="button button-secondary"
-            >
-                Start Learning →
-            </a>
+                        <div class="paper-equation">
+                            v = fλ
+                        </div>
 
-        </div>
+                    </div>
 
-    </div>
 
-</section>
+                    <span class="floating-star star-one">✦</span>
+                    <span class="floating-star star-two">✧</span>
+                    <span class="floating-dot dot-one"></span>
+                    <span class="floating-dot dot-two"></span>
 
+                </div>
 
+            </div>
 
-<section class="study-path">
+        </section>
 
-    <div class="container">
 
+        <!-- ============================= -->
+        <!-- STUDY PATH -->
+        <!-- ============================= -->
 
-        <div class="section-heading">
+        <section class="section study-path"
+                 id="classes">
 
-            <p class="eyebrow">
-                FIND YOUR PATH
-            </p>
+            <div class="container">
 
+                <div class="section-heading">
 
-            <h2>
-                What are you studying?
-            </h2>
+                    <div>
 
+                        <span class="section-label">
+                            FIND YOUR PATH
+                        </span>
 
-            <p>
-                Find your study space.
-            </p>
+                        <h2>
+                            What are you studying?
+                        </h2>
 
-        </div>
+                    </div>
 
+                    <p>
+                        Find your study space.
+                    </p>
 
+                </div>
 
-        <div class="study-grid">
 
+                <div class="study-grid">
 
-            <article class="study-card">
 
-                <span class="study-number">
-                    08
-                </span>
+                    <a href="#"
+                       class="study-card class-card">
 
-                <h3>
-                    Class 8
-                </h3>
+                        <span class="card-number">08</span>
 
-                <p>
-                    Build your basics.
-                </p>
+                        <div>
+                            <h3>Class 8</h3>
+                            <p>Build your basics</p>
+                        </div>
 
-            </article>
+                        <span class="card-arrow">→</span>
 
+                    </a>
 
 
-            <article class="study-card">
+                    <a href="#"
+                       class="study-card class-card">
 
-                <span class="study-number">
-                    09
-                </span>
+                        <span class="card-number">09</span>
 
-                <h3>
-                    Class 9
-                </h3>
+                        <div>
+                            <h3>Class 9</h3>
+                            <p>Learn with clarity</p>
+                        </div>
 
-                <p>
-                    Learn with clarity.
-                </p>
+                        <span class="card-arrow">→</span>
 
-            </article>
+                    </a>
 
 
+                    <a href="#"
+                       class="study-card class-card">
 
-            <article class="study-card">
+                        <span class="card-number">10</span>
 
-                <span class="study-number">
-                    10
-                </span>
+                        <div>
+                            <h3>Class 10</h3>
+                            <p>Prepare with confidence</p>
+                        </div>
 
-                <h3>
-                    Class 10
-                </h3>
+                        <span class="card-arrow">→</span>
 
-                <p>
-                    Prepare with confidence.
-                </p>
+                    </a>
 
-            </article>
 
+                    <a href="#"
+                       class="study-card class-card">
 
+                        <span class="card-number">11</span>
 
-            <article class="study-card">
+                        <div>
+                            <h3>Class 11</h3>
+                            <p>Strengthen your concepts</p>
+                        </div>
 
-                <span class="study-number">
-                    11
-                </span>
+                        <span class="card-arrow">→</span>
 
-                <h3>
-                    Class 11
-                </h3>
+                    </a>
 
-                <p>
-                    Strengthen your concepts.
-                </p>
 
-            </article>
+                    <a href="#"
+                       class="study-card class-card">
 
+                        <span class="card-number">12</span>
 
+                        <div>
+                            <h3>Class 12</h3>
+                            <p>Master your syllabus</p>
+                        </div>
 
-            <article class="study-card">
+                        <span class="card-arrow">→</span>
 
-                <span class="study-number">
-                    12
-                </span>
+                    </a>
 
-                <h3>
-                    Class 12
-                </h3>
 
-                <p>
-                    Master your syllabus.
-                </p>
+                    <a href="#"
+                       class="study-card exam-card neet-card"
+                       id="neet">
 
-            </article>
+                        <span class="card-icon">N</span>
 
+                        <div>
+                            <h3>NEET</h3>
+                            <p>Prepare. Practice. Perform.</p>
+                        </div>
 
+                        <span class="card-arrow">→</span>
 
-            <article class="study-card">
+                    </a>
 
-                <span class="study-number">
-                    N
-                </span>
 
-                <h3>
-                    NEET
-                </h3>
+                    <a href="#"
+                       class="study-card exam-card jee-card"
+                       id="jee">
 
-                <p>
-                    Prepare. Practice. Perform.
-                </p>
+                        <span class="card-icon">J</span>
 
-            </article>
+                        <div>
+                            <h3>JEE</h3>
+                            <p>Concepts to questions.</p>
+                        </div>
 
+                        <span class="card-arrow">→</span>
 
+                    </a>
 
-            <article class="study-card">
+                </div>
 
-                <span class="study-number">
-                    J
-                </span>
+            </div>
 
-                <h3>
-                    JEE
-                </h3>
+        </section>
 
-                <p>
-                    Concepts to questions.
-                </p>
 
-            </article>
+        <!-- ============================= -->
+        <!-- LEARNING PHILOSOPHY -->
+        <!-- ============================= -->
 
+        <section class="section philosophy">
 
-        </div>
+            <div class="container">
 
-    </div>
+                <div class="philosophy-box">
 
-</section>
+                    <div class="philosophy-heading">
 
+                        <span class="section-label">
+                            THE ACADEMICAURA WAY
+                        </span>
 
-</main>
+                        <h2>
+                            Learn → Revise → Practice → Test
+                        </h2>
 
+                        <p>
+                            A simple learning rhythm designed to
+                            help you understand concepts and revise
+                            with confidence.
+                        </p>
 
+                    </div>
 
-<footer class="site-footer">
 
-    <div class="container">
+                    <div class="learning-steps">
 
+                        <div class="learning-step">
 
-        <div class="footer-brand">
+                            <span>01</span>
 
-            <h2>
-                AcademicAura
-            </h2>
+                            <div>
+                                <h3>Learn</h3>
+                                <p>
+                                    Understand the concept clearly.
+                                </p>
+                            </div>
 
+                        </div>
 
-            <p>
-                Your little corner of learning.
-            </p>
 
-        </div>
+                        <div class="learning-step">
 
+                            <span>02</span>
 
-        <div class="footer-bottom">
+                            <div>
+                                <h3>Revise</h3>
+                                <p>
+                                    Refresh the essentials quickly.
+                                </p>
+                            </div>
 
-            © 2026 AcademicAura.
-            All rights reserved.
+                        </div>
 
-        </div>
 
-    </div>
+                        <div class="learning-step">
 
-</footer>
+                            <span>03</span>
 
+                            <div>
+                                <h3>Practice</h3>
+                                <p>
+                                    Turn understanding into ability.
+                                </p>
+                            </div>
 
-<script src="app.js"></script>
+                        </div>
 
 
-</body>
+                        <div class="learning-step">
 
-          </html>
+                            <span>04</span>
+
+                            <div>
+                                <h3>Test</h3>
+                                <p>
+                                    Check what you truly know.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- FEATURED RESOURCES -->
+        <!-- ============================= -->
+
+        <section class="section resources-section"
+                 id="resources">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            STUDY RESOURCES
+                        </span>
+
+                        <h2>
+                            Everything in one place.
+                        </h2>
+
+                    </div>
+
+                    <a href="#"
+                       class="text-link">
+                        Explore all →
+                    </a>
+
+                </div>
+
+
+                <div class="resource-grid">
+
+
+                    <article class="resource-card">
+
+                        <div class="resource-icon icon-notes">
+                            ✎
+                        </div>
+
+                        <span class="resource-tag">
+                            NOTES
+                        </span>
+
+                        <h3>
+                            Complete Notes
+                        </h3>
+
+                        <p>
+                            Clear explanations designed for
+                            understanding, not memorising.
+                        </p>
+
+                        <a href="#">
+                            Explore →
+                        </a>
+
+                    </article>
+
+
+                    <article class="resource-card">
+
+                        <div class="resource-icon icon-revision">
+                            ⚡
+                        </div>
+
+                        <span class="resource-tag">
+                            QUICK REVISION
+                        </span>
+
+                        <h3>
+                            3-Minute Revision
+                        </h3>
+
+                        <p>
+                            The essentials you need when time
+                            is short.
+                        </p>
+
+                        <a href="#">
+                            Explore →
+                        </a>
+
+                    </article>
+
+
+                    <article class="resource-card">
+
+                        <div class="resource-icon icon-mindmap">
+                            ◌
+                        </div>
+
+                        <span class="resource-tag">
+                            MIND MAPS
+                        </span>
+
+                        <h3>
+                            Visual Learning
+                        </h3>
+
+                        <p>
+                            Connect ideas, concepts and
+                            important points visually.
+                        </p>
+
+                        <a href="#">
+                            Explore →
+                        </a>
+
+                    </article>
+
+
+                    <article class="resource-card">
+
+                        <div class="resource-icon icon-questions">
+                            ?
+                        </div>
+
+                        <span class="resource-tag">
+                            PRACTICE
+                        </span>
+
+                        <h3>
+                            Question Banks
+                        </h3>
+
+                        <p>
+                            Practice from basic questions
+                            to exam-level problems.
+                        </p>
+
+                        <a href="#">
+                            Explore →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- 3 MINUTE REVISION -->
+        <!-- ============================= -->
+
+        <section class="section revision-section">
+
+            <div class="container">
+
+                <div class="revision-box">
+
+                    <div class="revision-content">
+
+                        <span class="section-label">
+                            QUICK REVISION
+                        </span>
+
+                        <h2>
+                            3-Minute Revision
+                        </h2>
+
+                        <p>
+                            Before the exam, before class,
+                            or whenever you need a quick
+                            refresher — start here.
+                        </p>
+
+                        <a href="#"
+                           class="button button-primary">
+                            Start Revising →
+                        </a>
+
+                    </div>
+
+
+                    <div class="revision-list">
+
+                        <div>
+                            <span>01</span>
+                            Definition
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            Key concept
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            Formula
+                        </div>
+
+                        <div>
+                            <span>04</span>
+                            Important condition
+                        </div>
+
+                        <div>
+                            <span>05</span>
+                            Common mistake
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- NEET + JEE -->
+        <!-- ============================= -->
+
+        <section class="section exam-section">
+
+            <div class="container">
+
+                <div class="exam-grid">
+
+
+                    <article class="exam-feature neet-feature">
+
+                        <span class="section-label">
+                            NEET PREP
+                        </span>
+
+                        <h2>
+                            Small steps.
+                            <br>
+                            Strong concepts.
+                        </h2>
+
+                        <p>
+                            Biology, Physics and Chemistry
+                            resources designed for focused
+                            preparation.
+                        </p>
+
+                        <a href="#">
+                            Explore NEET →
+                        </a>
+
+                    </article>
+
+
+                    <article class="exam-feature jee-feature">
+
+                        <span class="section-label">
+                            JEE PREP
+                        </span>
+
+                        <h2>
+                            Build concepts.
+                            <br>
+                            Solve smarter.
+                        </h2>
+
+                        <p>
+                            Physics, Chemistry and Mathematics
+                            resources for serious preparation.
+                        </p>
+
+                        <a href="#">
+                            Explore JEE →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- STUDY CORNER -->
+        <!-- ============================= -->
+
+        <section class="section study-corner"
+                 id="study-corner">
+
+            <div class="container">
+
+                <

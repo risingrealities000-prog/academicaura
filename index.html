@@ -51,68 +51,111 @@
 </a>
 
 
-<!-- ==========================================================
-     HEADER
+<<!-- ==========================================================
+     ACADEMICAURA HEADER
      ========================================================== -->
 
 <header class="site-header">
 
     <div class="container header-inner">
 
-        <!-- Temporary text logo -->
+        <!-- Brand / Temporary Logo -->
         <a
             href="index.html"
             class="brand"
-            aria-label="AcademicAura Home"
+            aria-label="AcademicAura — Home"
         >
             <span class="brand-name">AcademicAura</span>
         </a>
 
 
-        <!-- Desktop Navigation -->
+        <!-- ==================================================
+             DESKTOP NAVIGATION
+             ================================================== -->
+
         <nav
             class="desktop-nav"
-            aria-label="Main navigation"
+            aria-label="Primary navigation"
         >
 
-            <a href="index.html" class="nav-link active">
+            <a
+                href="index.html"
+                class="nav-link active"
+                aria-current="page"
+            >
                 Home
             </a>
 
-            <a href="#" class="nav-link">
+            <a
+                href="#"
+                class="nav-link"
+            >
                 Classes
             </a>
 
-            <a href="#" class="nav-link">
+            <a
+                href="#"
+                class="nav-link"
+            >
                 NEET
             </a>
 
-            <a href="#" class="nav-link">
+            <a
+                href="#"
+                class="nav-link"
+            >
                 JEE
             </a>
 
-            <a href="#" class="nav-link">
+            <a
+                href="#"
+                class="nav-link"
+            >
                 Resources
             </a>
 
-            <a href="#" class="nav-link">
+            <a
+                href="#"
+                class="nav-link"
+            >
                 Study Corner
             </a>
 
         </nav>
 
 
-        <!-- Header Actions -->
+        <!-- ==================================================
+             HEADER ACTIONS
+             ================================================== -->
+
         <div class="header-actions">
 
+            <!-- Search -->
             <button
                 class="icon-button search-button"
                 type="button"
                 aria-label="Search AcademicAura"
+                title="Search"
             >
-                <span aria-hidden="true">⌕</span>
+                <svg
+                    class="search-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="6.5"
+                    ></circle>
+
+                    <path
+                        d="M16 16L21 21"
+                    ></path>
+                </svg>
             </button>
 
+
+            <!-- Account -->
             <button
                 class="account-button"
                 type="button"
@@ -120,6 +163,8 @@
                 Account
             </button>
 
+
+            <!-- Mobile Menu -->
             <button
                 class="menu-button"
                 type="button"
@@ -137,7 +182,10 @@
     </div>
 
 
-    <!-- Mobile Navigation -->
+    <!-- ======================================================
+         MOBILE NAVIGATION
+         ====================================================== -->
+
     <nav
         id="mobile-menu"
         class="mobile-nav"
@@ -147,33 +195,71 @@
 
         <div class="container mobile-nav-inner">
 
-            <a href="index.html" class="mobile-nav-link active">
-                Home
+            <a
+                href="index.html"
+                class="mobile-nav-link active"
+                aria-current="page"
+            >
+                <span>Home</span>
+                <span class="mobile-nav-arrow">→</span>
             </a>
 
-            <a href="#" class="mobile-nav-link">
-                Classes
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>Classes</span>
+                <span class="mobile-nav-arrow">→</span>
             </a>
 
-            <a href="#" class="mobile-nav-link">
-                NEET
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>NEET</span>
+                <span class="mobile-nav-arrow">→</span>
             </a>
 
-            <a href="#" class="mobile-nav-link">
-                JEE
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>JEE</span>
+                <span class="mobile-nav-arrow">→</span>
             </a>
 
-            <a href="#" class="mobile-nav-link">
-                Resources
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>Resources</span>
+                <span class="mobile-nav-arrow">→</span>
             </a>
 
-            <a href="#" class="mobile-nav-link">
-                Study Corner
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>Study Corner</span>
+                <span class="mobile-nav-arrow">→</span>
             </a>
 
-            <a href="#" class="mobile-nav-link">
-                Account
-            </a>
+
+            <div class="mobile-account-area">
+
+                <button
+                    class="mobile-account-button"
+                    type="button"
+                >
+                    Account
+                </button>
+
+            </div>
 
         </div>
 
@@ -418,27 +504,98 @@
 
 
 <!-- ==========================================================
-     FOOTER
+     ACADEMICAURA FOOTER
      ========================================================== -->
 
 <footer class="site-footer">
 
-    <div class="container footer-inner">
+    <div class="container footer-main">
+
+        <!-- Brand -->
 
         <div class="footer-brand">
 
-            <span class="brand-name">
+            <a
+                href="index.html"
+                class="footer-logo"
+                aria-label="AcademicAura — Home"
+            >
                 AcademicAura
-            </span>
+            </a>
 
-            <p>
+            <p class="footer-tagline">
                 Your little corner of learning.
+            </p>
+
+            <p class="footer-description">
+                A calm and organized space for learning,
+                revision, practice and better preparation.
             </p>
 
         </div>
 
 
-        <div class="footer-links">
+        <!-- Explore -->
+
+        <div class="footer-column">
+
+            <h2 class="footer-heading">
+                Explore
+            </h2>
+
+            <a href="#">
+                Classes
+            </a>
+
+            <a href="#">
+                NEET
+            </a>
+
+            <a href="#">
+                JEE
+            </a>
+
+            <a href="#">
+                Resources
+            </a>
+
+        </div>
+
+
+        <!-- Learn -->
+
+        <div class="footer-column">
+
+            <h2 class="footer-heading">
+                Learn
+            </h2>
+
+            <a href="#">
+                Notes
+            </a>
+
+            <a href="#">
+                Quick Revision
+            </a>
+
+            <a href="#">
+                Question Banks
+            </a>
+
+            <a href="#">
+                Study Corner
+            </a>
+
+        </div>
+
+
+        <!-- Website -->
+
+        <div class="footer-column">
+
+            <h2 class="footer-heading">
+                AcademicAura
+            </h2>
 
             <a href="#">
                 About
@@ -469,11 +626,21 @@
     </div>
 
 
-    <div class="container footer-bottom">
+    <!-- Footer Bottom -->
 
-        <p>
-            © 2026 AcademicAura. All rights reserved.
-        </p>
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-inner">
+
+            <p>
+                © 2026 AcademicAura. All rights reserved.
+            </p>
+
+            <p>
+                Built for learning. Designed with care.
+            </p>
+
+        </div>
 
     </div>
 

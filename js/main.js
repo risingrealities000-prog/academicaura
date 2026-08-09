@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".mobile-nav");
 
 
-    /* =========================
-       MOBILE MENU
-    ========================== */
+    /* =====================================================
+       MOBILE NAVIGATION
+    ====================================================== */
 
     if (menuButton && mobileNav) {
 
@@ -23,18 +23,30 @@ document.addEventListener("DOMContentLoaded", () => {
             const isOpen =
                 mobileNav.classList.toggle("open");
 
+
             menuButton.setAttribute(
                 "aria-expanded",
+                String(isOpen)
+            );
+
+
+            menuButton.setAttribute(
+                "aria-label",
                 isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
             );
 
         });
 
 
-        /* Close menu after selecting a link */
+        /* Close menu when a navigation link is selected */
 
         const mobileLinks =
-            mobileNav.querySelectorAll("a");
+            mobileNav.querySelectorAll(
+                ".mobile-nav-link"
+            );
+
 
         mobileLinks.forEach((link) => {
 
@@ -42,14 +54,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 mobileNav.classList.remove("open");
 
+
                 menuButton.setAttribute(
                     "aria-expanded",
                     "false"
                 );
 
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    "Open navigation menu"
+                );
+
             });
 
         });
+
+
+        /* Close menu with Escape key */
+
+        document.addEventListener(
+            "keydown",
+            (event) => {
+
+                if (
+                    event.key === "Escape" &&
+                    mobileNav.classList.contains("open")
+                ) {
+
+                    mobileNav.classList.remove("open");
+
+
+                    menuButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+
+                    menuButton.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuButton.focus();
+
+                }
+
+            }
+        );
 
     }
 

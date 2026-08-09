@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AcademicAura Class 8 — Organised learning resources, notes, revision and practice."
+    >
+
+    <meta
+        name="theme-color"
+        content="#F6F7F4"
+    >
+
+    <title>Class 8 — AcademicAura</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Main CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- Main JavaScript -->
+
+    <script
+        src="js/main.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================================
+     SKIP LINK
+     ========================================================== -->
+
+<a
+    class="skip-link"
+    href="#main-content"
+>
+    Skip to main content
+</a>
+
+
+<!-- ==========================================================
+     HEADER
+     ========================================================== -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+
+        <!-- Brand -->
+
+        <a
+            href="index.html"
+            class="brand"
+            aria-label="AcademicAura — Home"
+        >
+
+            <span class="brand-name">
+                AcademicAura
+            </span>
+
+        </a>
+
+
+        <!-- Desktop Navigation -->
+
+        <nav
+            class="desktop-nav"
+            aria-label="Primary navigation"
+        >
+
+            <a
+                href="index.html"
+                class="nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="classes.html"
+                class="nav-link active"
+                aria-current="page"
+            >
+                Classes
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                NEET
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                JEE
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                Resources
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                Study Corner
+            </a>
+
+        </nav>
+
+
+        <!-- Header Actions -->
+
+        <div class="header-actions">
+
+            <button
+                class="icon-button search-button"
+                type="button"
+                aria-label="Search AcademicAura"
+                title="Search"
+            >
+
+                <svg
+                    class="search-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="6.5"
+                    ></circle>
+
+                    <path
+                        d="M16 16L21 21"
+                    ></path>
+
+                </svg>
+
+            </button>
+
+
+            <button
+                class="account-button"
+                type="button"
+            >
+                Account
+            </button>
+
+
+            <!-- Mobile Menu -->
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+
+    <nav
+        id="mobile-menu"
+        class="mobile-nav"
+        aria-label="Mobile navigation"
+        hidden
+    >
+
+        <div class="container mobile-nav-inner">
+
+            <a
+                href="index.html"
+                class="mobile-nav-link"
+            >
+                <span>Home</span>
+                <span class="mobile-nav-arrow">→</span>
+            </a>
+
+
+            <a
+                href="classes.html"
+                class="mobile-nav-link active"
+                aria-current="page"
+            >
+                <span>Classes</span>
+                <span class="mobile-nav-arrow">→</span>
+            </a>
+
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>NEET</span>
+                <span class="mobile-nav-arrow">→</span>
+            </a>
+
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>JEE</span>
+                <span class="mobile-nav-arrow">→</span>
+            </a>
+
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>Resources</span>
+                <span class="mobile-nav-arrow">→</span>
+            </a>
+
+
+            <a
+                href="#"
+                class="mobile-nav-link"
+            >
+                <span>Study Corner</span>
+                <span class="mobile-nav-arrow">→</span>
+            </a>
+
+
+            <div class="mobile-account-area">
+
+                <button
+                    class="mobile-account-button"
+                    type="button"
+                >
+                    Account
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ==========================================================
+     MAIN
+     ========================================================== -->
+
+<main id="main-content">
+
+
+    <!-- ======================================================
+         BREADCRUMB
+         ====================================================== -->
+
+    <section class="class-page-hero">
+
+        <div class="container">
+
+
+            <nav
+                class="class-breadcrumb"
+                aria-label="Breadcrumb"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span aria-hidden="true">
+                    /
+                </span>
+
+                <a href="classes.html">
+                    Classes
+                </a>
+
+                <span aria-hidden="true">
+                    /
+                </span>
+
+                <span aria-current="page">
+                    Class 8
+                </span>
+
+            </nav>
+
+
+            <div class="class-page-heading">
+
+                <span class="eyebrow">
+                    ACADEMICAURA • CLASS 8
+                </span>
+
+                <h1>
+                    Class 8
+                </h1>
+
+                <p>
+                    Build your basics with clear concepts,
+                    organised resources and simple revision.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         SUBJECTS
+         ====================================================== -->
+
+    <section class="class-subject-section">
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    YOUR SUBJECTS
+                </span>
+
+                <h2>
+                    Choose your subject.
+                </h2>
+
+                <p>
+                    Explore learning resources organised
+                    around the subjects you study.
+                </p>
+
+            </div>
+
+
+            <div class="class-subject-grid">
+
+
+                <!-- Mathematics -->
+
+                <a
+                    href="#"
+                    class="class-subject-card subject-card-teal"
+                >
+
+                    <span class="class-subject-icon">
+                        ∑
+                    </span>
+
+                    <div>
+
+                        <span class="class-subject-label">
+                            MATHEMATICS
+                        </span>
+
+                        <h3>
+                            Mathematics
+                        </h3>
+
+                        <p>
+                            Concepts, methods and practice.
+                        </p>
+
+                    </div>
+
+                    <span class="class-subject-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Science -->
+
+                <a
+                    href="#"
+                    class="class-subject-card subject-card-sage"
+                >
+
+                    <span class="class-subject-icon">
+                        ⚗
+                    </span>
+
+                    <div>
+
+                        <span class="class-subject-label">
+                            SCIENCE
+                        </span>
+
+                        <h3>
+                            Science
+                        </h3>
+
+                        <p>
+                            Understand the world around you.
+                        </p>
+
+                    </div>
+
+                    <span class="class-subject-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- English -->
+
+                <a
+                    href="#"
+                    class="class-subject-card subject-card-blue"
+                >
+
+                    <span class="class-subject-icon">
+                        A
+                    </span>
+
+                    <div>
+
+                        <span class="class-subject-label">
+                            LANGUAGE
+                        </span>
+
+                        <h3>
+                            English
+                        </h3>
+
+                        <p>
+                            Literature, language and writing.
+                        </p>
+
+                    </div>
+
+                    <span class="class-subject-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Social Science -->
+
+                <a
+                    href="#"
+                    class="class-subject-card subject-card-lavender"
+                >
+
+                    <span class="class-subject-icon">
+                        ◎
+                    </span>
+
+                    <div>
+
+                        <span class="class-subject-label">
+                            SOCIAL SCIENCE
+                        </span>
+
+                        <h3>
+                            Social Science
+                        </h3>
+
+                        <p>
+                            History, geography and society.
+                        </p>
+
+                    </div>
+
+                    <span class="class-subject-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Second Language -->
+
+                <a
+                    href="#"
+                    class="class-subject-card subject-card-rose"
+                >
+
+                    <span class="class-subject-icon">
+                        文
+                    </span>
+
+                    <div>
+
+                        <span class="class-subject-label">
+                            LANGUAGE
+                        </span>
+
+                        <h3>
+                            Languages
+                        </h3>
+
+                        <p>
+                            Build communication and language skills.
+                        </p>
+
+                    </div>
+
+                    <span class="class-subject-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Computer Science -->
+
+                <a
+                    href="#"
+                    class="class-subject-card subject-card-sage"
+                >
+
+                    <span class="class-subject-icon">
+                        &lt;/&gt;
+                    </span>
+
+                    <div>
+
+                        <span class="class-subject-label">
+                            TECHNOLOGY
+                        </span>
+
+                        <h3>
+                            Computer Science
+                        </h3>
+
+                        <p>
+                            Digital concepts and practical skills.
+                        </p>
+
+                    </div>
+
+                    <span class="class-subject-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         LEARNING JOURNEY
+         ====================================================== -->
+
+    <section class="class-learning-section">
+
+        <div class="container">
+
+            <div class="class-learning-box">
+
+                <div>
+
+                    <span class="eyebrow">
+                        YOUR LEARNING JOURNEY
+                    </span>
+
+                    <h2>
+                        Learn. Revise. Practice. Test.
+                    </h2>
+
+                    <p>
+                        Every subject will eventually follow
+                        the AcademicAura learning system,
+                        helping you move from understanding
+                        to confidence.
+                    </p>
+
+                </div>
+
+
+                <div class="class-mini-flow">
+
+                    <span>
+                        Learn
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                    <span>
+                        Revise
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                    <span>
+                        Practice
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                    <span>
+                        Test
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         BACK TO CLASSES
+         ====================================================== -->
+
+    <section class="class-back-section">
+
+        <div class="container">
+
+            <a
+                href="classes.html"
+                class="button button-secondary"
+            >
+                ← Back to Classes
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ==========================================================
+     FOOTER
+     ========================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container footer-main">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="footer-logo"
+            >
+                AcademicAura
+            </a>
+
+            <p class="footer-tagline">
+                Your little corner of learning.
+            </p>
+
+            <p class="footer-description">
+                A calm and organized space for learning,
+                revision, practice and better preparation.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h2 class="footer-heading">
+                Explore
+            </h2>
+
+            <a href="classes.html">
+                Classes
+            </a>
+
+            <a href="#">
+                NEET
+            </a>
+
+            <a href="#">
+                JEE
+            </a>
+
+            <a href="#">
+                Resources
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h2 class="footer-heading">
+                Learn
+            </h2>
+
+            <a href="#">
+                Notes
+            </a>
+
+            <a href="#">
+                Quick Revision
+            </a>
+
+            <a href="#">
+                Question Banks
+            </a>
+
+            <a href="#">
+                Study Corner
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h2 class="footer-heading">
+                AcademicAura
+            </h2>
+
+            <a href="#">
+                About
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+            <a href="#">
+                Copyright
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Disclaimer
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-inner">
+
+            <p>
+                © 2026 AcademicAura. All rights reserved.
+            </p>
+
+            <p>
+                Built for learning. Designed with care.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+      </html>

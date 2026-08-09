@@ -1660,3 +1660,349 @@ ol {
     font-size: 11px !important;
 
     line-height: 1
+/* =========================================================
+   15. CLASS 8–12 ACADEMIC JOURNEY
+   ========================================================= */
+
+.classes-section {
+    background: var(--ivory);
+}
+
+
+/* Class grid */
+
+.class-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+}
+
+
+/* Individual class card */
+
+.class-card {
+
+    position: relative;
+
+    min-height: 225px;
+
+    padding: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-large);
+
+    border:
+        1px solid var(--border-light);
+
+    color: var(--charcoal);
+
+    box-shadow: var(--shadow-card);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* Soft decorative circle */
+
+.class-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    right: -45px;
+    bottom: -55px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.35);
+
+    pointer-events: none;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.class-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 14px 32px
+        rgba(73, 57, 45, 0.10);
+
+    border-color:
+        var(--border-medium);
+}
+
+
+.class-card:hover::before {
+
+    transform:
+        scale(1.25);
+}
+
+
+/* Different class colours */
+
+.class-8 {
+    background: var(--definition-bg);
+}
+
+
+.class-9 {
+    background: var(--remember-bg);
+}
+
+
+.class-10 {
+    background: var(--concept-bg);
+}
+
+
+.class-11 {
+    background: var(--formula-bg);
+}
+
+
+.class-12 {
+    background: var(--exam-bg);
+}
+
+
+/* Top row */
+
+.class-card-top {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* Large class number */
+
+.class-number {
+
+    font-family: "Lora", serif;
+
+    font-size: 34px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color:
+        var(--warm-brown);
+
+    opacity: 0.85;
+}
+
+
+/* Arrow */
+
+.class-arrow {
+
+    width: 36px;
+    height: 36px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 253, 252, 0.65);
+
+    color:
+        var(--warm-brown);
+
+    font-size: 18px;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.class-card:hover .class-arrow {
+
+    transform:
+        translateX(3px);
+
+    background:
+        rgba(255, 253, 252, 0.9);
+}
+
+
+/* Card content */
+
+.class-card-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.class-tag {
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    font-size: 8px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+
+    color:
+        var(--warm-brown);
+}
+
+
+.class-card h3 {
+
+    font-size: 25px;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.8px;
+
+    font-weight: 800;
+}
+
+
+.class-card p {
+
+    max-width: 310px;
+
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    line-height: 1.65;
+
+    color:
+        rgba(48, 48, 47, 0.62);
+}
+
+
+/* Small decorative academic mark */
+
+.class-card-content::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    right: 4px;
+
+    bottom: 0;
+
+    font-size: 17px;
+
+    color:
+        rgba(105, 86, 74, 0.25);
+}
+
+
+/* =========================================================
+   CLASS GRID — TABLET
+   ========================================================= */
+
+@media (min-width: 600px) {
+
+    .class-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   CLASS GRID — DESKTOP
+   ========================================================= */
+
+@media (min-width: 900px) {
+
+    .class-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 18px;
+    }
+
+
+    .class-card {
+
+        min-height: 240px;
+
+        padding: 25px;
+    }
+
+
+    /* Make Class 12 slightly wider */
+
+    .class-12 {
+
+        grid-column:
+            span 2;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1100px) {
+
+    .class-grid {
+
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+
+    .class-12 {
+
+        grid-column:
+            span 1;
+    }
+
+}

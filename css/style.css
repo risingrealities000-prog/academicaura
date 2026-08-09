@@ -1449,3 +1449,1704 @@ html {
 }
 
   }
+
+/* ================================================================
+   ACADEMICAURA
+   STEP 3 — FINAL PREMIUM HOMEPAGE
+   ================================================================ */
+
+
+/* ================================================================
+   HERO
+   ================================================================ */
+
+.home-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    padding-block: 82px 96px;
+
+    border-bottom: 1px solid var(--border-light);
+}
+
+
+.hero-container {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(280px, 0.85fr);
+
+    align-items: center;
+
+    gap: 64px;
+}
+
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 720px;
+}
+
+
+.hero-content h1 {
+    margin-top: 18px;
+
+    font-size: clamp(3rem, 6.5vw, 5.5rem);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.055em;
+}
+
+
+.hero-content h1 span {
+    display: block;
+}
+
+
+.hero-description {
+    max-width: 610px;
+
+    margin-top: 28px;
+
+    color: var(--text-secondary);
+
+    font-size: clamp(0.98rem, 2vw, 1.08rem);
+
+    line-height: 1.8;
+}
+
+
+.hero-actions {
+    justify-content: flex-start;
+
+    margin-top: 32px;
+}
+
+
+.hero-actions .button {
+    gap: 10px;
+}
+
+
+/* Hero decorative shapes */
+
+.hero-decoration {
+    position: absolute;
+
+    pointer-events: none;
+
+    border-radius: 50%;
+}
+
+
+.hero-decoration-one {
+    width: 430px;
+    height: 430px;
+
+    top: -170px;
+    right: -100px;
+
+    background: var(--color-peach);
+
+    opacity: 0.25;
+}
+
+
+.hero-decoration-two {
+    width: 220px;
+    height: 220px;
+
+    bottom: -120px;
+    left: -80px;
+
+    background: var(--color-sage);
+
+    opacity: 0.12;
+}
+
+
+/* ================================================================
+   HERO STUDY CARD
+   ================================================================ */
+
+.hero-study-card {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 22px;
+}
+
+
+.hero-paper {
+    position: relative;
+
+    width: min(100%, 360px);
+
+    min-height: 390px;
+
+    padding: 28px;
+
+    background: var(--color-card);
+
+    border: 1px solid rgba(66, 107, 122, 0.11);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 55px rgba(66, 107, 122, 0.09);
+
+    transform: rotate(2deg);
+}
+
+
+.hero-paper::after {
+    content: "";
+
+    position: absolute;
+
+    width: 95px;
+    height: 95px;
+
+    right: -35px;
+    bottom: -25px;
+
+    background: var(--color-lavender);
+
+    opacity: 0.28;
+
+    border-radius: 50%;
+}
+
+
+.paper-topline {
+    display: flex;
+
+    gap: 6px;
+
+    margin-bottom: 48px;
+}
+
+
+.paper-topline span {
+    width: 7px;
+    height: 7px;
+
+    background: var(--color-primary);
+
+    border-radius: 50%;
+
+    opacity: 0.65;
+}
+
+
+.paper-heading {
+    color: var(--text-muted);
+
+    font-size: 0.65rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+}
+
+
+.paper-title {
+    margin-top: 18px;
+
+    color: var(--text-primary);
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.04em;
+}
+
+
+.paper-flow {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-top: 38px;
+}
+
+
+.flow-item {
+    padding: 7px 12px;
+
+    border-radius: var(--radius-pill);
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+}
+
+
+.flow-learn {
+    background: var(--color-concept);
+}
+
+
+.flow-revise {
+    background: var(--color-definition);
+}
+
+
+.flow-practice {
+    background: var(--color-remember);
+}
+
+
+.flow-test {
+    background: var(--color-exam-tip);
+}
+
+
+.flow-line {
+    width: 1px;
+    height: 15px;
+
+    margin-left: 17px;
+
+    background: var(--border-medium);
+}
+
+
+/* ================================================================
+   STUDY PATH
+   ================================================================ */
+
+.study-path-section {
+    padding-block: 96px;
+}
+
+
+.path-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+
+.path-card {
+    position: relative;
+
+    min-height: 170px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 22px;
+
+    overflow: hidden;
+
+    background: var(--color-card);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-card);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+
+.path-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-soft);
+}
+
+
+.path-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+
+    right: -32px;
+    top: -32px;
+
+    border-radius: 50%;
+
+    opacity: 0.65;
+}
+
+
+.path-blue::before {
+    background: var(--color-primary);
+}
+
+
+.path-sage::before {
+    background: var(--color-sage);
+}
+
+
+.path-lavender::before {
+    background: var(--color-lavender);
+}
+
+
+.path-rose::before {
+    background: var(--color-rose);
+}
+
+
+.path-teal::before {
+    background: var(--color-teal);
+}
+
+
+.path-number {
+    position: relative;
+    z-index: 1;
+
+    width: 40px;
+    height: 40px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--color-background);
+
+    color: var(--text-primary);
+
+    border-radius: 12px;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+}
+
+
+.path-text-number {
+    font-size: 0.9rem;
+}
+
+
+.path-content {
+    position: relative;
+
+    z-index: 1;
+
+    margin-top: 20px;
+}
+
+
+.path-content h3 {
+    font-size: 1.15rem;
+}
+
+
+.path-content p {
+    margin-top: 4px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.77rem;
+}
+
+
+.path-arrow {
+    position: absolute;
+
+    right: 20px;
+    bottom: 18px;
+
+    color: var(--text-primary);
+
+    font-size: 1.1rem;
+
+    opacity: 0.7;
+}
+
+
+/* ================================================================
+   SECTION HEADING
+   ================================================================ */
+
+.section-heading h2 {
+    letter-spacing: -0.045em;
+}
+
+
+.section-heading-row {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.section-link {
+    flex-shrink: 0;
+
+    padding-bottom: 6px;
+
+    color: var(--color-teal);
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+}
+
+
+.section-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================================================
+   SUBJECTS
+   ================================================================ */
+
+.subjects-section {
+    padding-block: 96px;
+
+    background: #F0F3F0;
+
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+
+.subject-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 14px;
+
+    margin-top: 40px;
+}
+
+
+.subject-card {
+    position: relative;
+
+    min-height: 180px;
+
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px;
+
+    background: var(--color-card);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-card);
+
+    overflow: hidden;
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+
+.subject-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 4px;
+}
+
+
+.subject-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-soft);
+}
+
+
+.subject-physics::before {
+    background: var(--color-sage);
+}
+
+
+.subject-chemistry::before {
+    background: var(--color-lavender);
+}
+
+
+.subject-biology::before {
+    background: var(--color-rose);
+}
+
+
+.subject-mathematics::before {
+    background: var(--color-teal);
+}
+
+
+.subject-computer::before {
+    background: var(--color-lavender);
+}
+
+
+.subject-english::before {
+    background: var(--color-sage);
+}
+
+
+.subject-icon {
+    width: 50px;
+    height: 50px;
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    background: var(--color-background);
+
+    color: var(--text-primary);
+
+    border-radius: 15px;
+
+    font-size: 1.25rem;
+
+    font-weight: 700;
+}
+
+
+.subject-label {
+    color: var(--text-muted);
+
+    font-size: 0.6rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+}
+
+
+.subject-card h3 {
+    margin-top: 4px;
+
+    font-size: 1.08rem;
+}
+
+
+.subject-card p {
+    margin-top: 5px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.74rem;
+}
+
+
+.subject-arrow {
+    color: var(--color-teal);
+
+    font-size: 1rem;
+}
+
+
+/* ================================================================
+   LEARNING FLOW
+   ================================================================ */
+
+.learning-flow-section {
+    padding-block: 104px;
+}
+
+
+.learning-flow-intro {
+    max-width: 660px;
+
+    margin-bottom: 42px;
+}
+
+
+.learning-flow-intro h2 {
+    margin-top: 14px;
+}
+
+
+.learning-flow-intro p {
+    margin-top: 16px;
+
+    color: var(--text-secondary);
+
+    max-width: 590px;
+}
+
+
+.learning-flow {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+
+.flow-card {
+    position: relative;
+
+    min-height: 310px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 26px;
+
+    background: var(--color-card);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-card);
+
+    overflow: hidden;
+}
+
+
+.flow-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    right: -60px;
+    bottom: -60px;
+
+    border-radius: 50%;
+
+    opacity: 0.35;
+}
+
+
+.flow-card-learn::before {
+    background: var(--color-primary);
+}
+
+
+.flow-card-revise::before {
+    background: var(--color-sage);
+}
+
+
+.flow-card-practice::before {
+    background: var(--color-lavender);
+}
+
+
+.flow-card-test::before {
+    background: var(--color-rose);
+}
+
+
+.flow-number {
+    color: var(--text-muted);
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+}
+
+
+.flow-icon {
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    margin-top: 28px;
+
+    background: var(--color-background);
+
+    border-radius: 14px;
+
+    color: var(--text-primary);
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+}
+
+
+.flow-card h3 {
+    margin-top: 22px;
+
+    font-size: 1.4rem;
+}
+
+
+.flow-card p {
+    margin-top: 10px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.8rem;
+
+    line-height: 1.7;
+}
+
+
+.flow-label {
+    margin-top: auto;
+    padding-top: 22px;
+
+    color: var(--color-teal);
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+}
+
+
+/* ================================================================
+   FEATURED RESOURCES
+   ================================================================ */
+
+.featured-section {
+    padding-block: 96px;
+
+    background: #F0F3F0;
+
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+
+.resource-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 14px;
+
+    margin-top: 40px;
+}
+
+
+.resource-card {
+    position: relative;
+
+    min-height: 190px;
+
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 24px;
+
+    background: var(--color-card);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-card);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+
+.resource-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-soft);
+}
+
+
+.resource-symbol {
+    width: 46px;
+    height: 46px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--color-concept);
+
+    color: var(--color-teal);
+
+    border-radius: 13px;
+
+    font-weight: 800;
+}
+
+
+.resource-type {
+    color: var(--text-muted);
+
+    font-size: 0.58rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+}
+
+
+.resource-card h3 {
+    margin-top: 5px;
+
+    font-size: 1.03rem;
+}
+
+
+.resource-card p {
+    margin-top: 7px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.72rem;
+
+    line-height: 1.6;
+}
+
+
+.resource-arrow {
+    color: var(--color-teal);
+
+    font-size: 1rem;
+}
+
+
+/* ================================================================
+   NEET + JEE
+   ================================================================ */
+
+.exam-prep-section {
+    padding-block: 96px;
+}
+
+
+.exam-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+
+.exam-card {
+    position: relative;
+
+    min-height: 390px;
+
+    padding: 34px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    border: 1px solid var(--border-light);
+
+    box-shadow: var(--shadow-card);
+}
+
+
+.exam-neet {
+    background: #EDF2ED;
+}
+
+
+.exam-jee {
+    background: #E7F0F3;
+}
+
+
+.exam-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    right: -80px;
+    bottom: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.55);
+}
+
+
+.exam-card-top {
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.exam-kicker {
+    color: var(--text-primary);
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.13em;
+}
+
+
+.exam-mark {
+    width: 44px;
+    height: 44px;
+
+    display: grid;
+    place-items: center;
+
+    background: rgba(255, 255, 255, 0.62);
+
+    border-radius: 14px;
+
+    color: var(--text-primary);
+
+    font-size: 1.1rem;
+
+    font-weight: 800;
+}
+
+
+.exam-card h2 {
+    position: relative;
+
+    z-index: 1;
+
+    margin-top: 42px;
+
+    font-size: clamp(1.9rem, 4vw, 3rem);
+
+    letter-spacing: -0.045em;
+}
+
+
+.exam-card > p {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 480px;
+
+    margin-top: 18px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.83rem;
+
+    line-height: 1.75;
+}
+
+
+.exam-subjects {
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 25px;
+}
+
+
+.exam-subjects span {
+    padding: 6px 10px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    color: var(--text-primary);
+
+    border-radius: var(--radius-pill);
+
+    font-size: 0.65rem;
+
+    font-weight: 700;
+}
+
+
+.exam-link {
+    position: relative;
+
+    z-index: 1;
+
+    display: inline-flex;
+
+    margin-top: 28px;
+
+    color: var(--text-primary);
+
+    font-size: 0.76rem;
+
+    font-weight: 800;
+}
+
+
+.exam-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================================================
+   STUDY CORNER
+   ================================================================ */
+
+.study-corner-section {
+    padding-block: 104px;
+
+    background: #F0F3F0;
+
+    border-top: 1px solid var(--border-light);
+}
+
+
+.study-corner-layout {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.study-corner-intro {
+    max-width: 430px;
+}
+
+
+.study-corner-intro h2 {
+    margin-top: 15px;
+}
+
+
+.study-corner-intro p {
+    margin-top: 18px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.86rem;
+
+    line-height: 1.8;
+}
+
+
+.study-corner-intro .button {
+    margin-top: 26px;
+}
+
+
+.study-tip-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.tip-card {
+    min-height: 170px;
+
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 22px;
+
+    background: var(--color-card);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-card);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+
+.tip-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-soft);
+}
+
+
+.tip-icon {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    color: var(--text-primary);
+
+    font-size: 1rem;
+}
+
+
+.tip-blue .tip-icon {
+    background: var(--color-concept);
+}
+
+
+.tip-sage .tip-icon {
+    background: var(--color-definition);
+}
+
+
+.tip-lavender .tip-icon {
+    background: var(--color-remember);
+}
+
+
+.tip-rose .tip-icon {
+    background: var(--color-exam-tip);
+}
+
+
+.tip-card span:not(.tip-icon):not(.tip-arrow) {
+    color: var(--text-muted);
+
+    font-size: 0.57rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+}
+
+
+.tip-card h3 {
+    margin-top: 5px;
+
+    font-size: 0.9rem;
+
+    line-height: 1.4;
+}
+
+
+.tip-arrow {
+    color: var(--color-teal);
+}
+
+
+/* ================================================================
+   FINAL CTA
+   ================================================================ */
+
+.final-cta-section {
+    padding-block: 96px;
+}
+
+
+.final-cta {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: #E7F0F3;
+
+    border: 1px solid var(--border-light);
+
+    border-radius: 30px;
+}
+
+
+.final-cta-decoration {
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    top: -130px;
+    right: -50px;
+
+    background: var(--color-peach);
+
+    opacity: 0.28;
+
+    border-radius: 50%;
+}
+
+
+.final-cta .eyebrow,
+.final-cta h2,
+.final-cta p,
+.final-cta .button {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.final-cta h2 {
+    margin-top: 15px;
+
+    font-size: clamp(2rem, 5vw, 3.5rem);
+
+    letter-spacing: -0.05em;
+}
+
+
+.final-cta p {
+    max-width: 520px;
+
+    margin: 16px auto 0;
+
+    color: var(--text-secondary);
+
+    font-size: 0.86rem;
+}
+
+
+.final-cta .button {
+    margin-top: 28px;
+}
+
+
+/* ================================================================
+   TABLET
+   ================================================================ */
+
+@media (max-width: 1024px) {
+
+    .hero-container {
+        gap: 35px;
+    }
+
+
+    .hero-content h1 {
+        font-size: clamp(2.8rem, 6vw, 4.3rem);
+    }
+
+
+    .path-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .subject-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .learning-flow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .study-corner-layout {
+        gap: 40px;
+    }
+
+}
+
+
+/* ================================================================
+   MOBILE
+   ================================================================ */
+
+@media (max-width: 760px) {
+
+    /* ------------------------------------------------------------
+       Hero
+       ------------------------------------------------------------ */
+
+    .home-hero {
+        padding-block: 64px 70px;
+    }
+
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        text-align: center;
+    }
+
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+
+    .hero-content h1 {
+        margin-top: 16px;
+
+        font-size: clamp(2.65rem, 13vw, 4rem);
+
+        line-height: 1.01;
+    }
+
+
+    .hero-description {
+        margin-inline: auto;
+
+        font-size: 0.9rem;
+
+        line-height: 1.75;
+    }
+
+
+    .hero-actions {
+        width: min(100%, 350px);
+
+        margin-inline: auto;
+
+        align-items: stretch;
+    }
+
+
+    .hero-study-card {
+        padding: 8px;
+    }
+
+
+    .hero-paper {
+        min-height: 350px;
+
+        transform: rotate(1deg);
+    }
+
+
+    /* ------------------------------------------------------------
+       Sections
+       ------------------------------------------------------------ */
+
+    .study-path-section,
+    .subjects-section,
+    .featured-section {
+        padding-block: 72px;
+    }
+
+
+    .learning-flow-section,
+    .exam-prep-section,
+    .study-corner-section {
+        padding-block: 78px;
+    }
+
+
+    .section-heading-row {
+        display: block;
+    }
+
+
+    .section-link {
+        display: inline-flex;
+
+        margin-top: 18px;
+    }
+
+
+    /* ------------------------------------------------------------
+       Study Path
+       ------------------------------------------------------------ */
+
+    .path-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+
+        margin-top: 32px;
+}
+
+.path-card {
+    min-height: 155px;
+
+    padding: 18px;
+}
+
+.path-content {
+    margin-top: 15px;
+}
+
+.path-content h3 {
+    font-size: 1rem;
+}
+
+.path-content p {
+    font-size: 0.68rem;
+}
+
+/*
+--------------------------------------------------
+                    Subjects
+--------------------------------------------------
+*/
+
+.subject-grid {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.subject-card {
+    min-height: 125px;
+
+    padding: 18px;
+}
+
+/*
+--------------------------------------------------
+                  Learning Flow
+--------------------------------------------------
+*/
+
+.learning-flow {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+}
+
+.flow-card {
+    min-height: 270px;
+
+    padding: 24px;
+}
+
+/*
+--------------------------------------------------
+                    Resources
+--------------------------------------------------
+*/
+
+.resource-grid {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.resource-card {
+    min-height: 150px;
+
+    padding: 19px;
+}
+
+/*
+--------------------------------------------------
+                   NEET / JEE
+--------------------------------------------------
+*/
+
+.exam-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+}
+
+.exam-card {
+    min-height: 360px;
+
+    padding: 27px;
+}
+
+.exam-card h2 {
+    margin-top: 35px;
+
+    font-size: 2rem;
+}
+
+/*
+--------------------------------------------------
+                   Study Corner
+--------------------------------------------------
+*/
+
+.study-corner-layout {
+    grid-template-columns: 1fr;
+
+    gap: 36px;
+}
+
+.study-corner-intro {
+    max-width: 100%;
+}
+
+.study-tip-grid {
+    grid-template-columns: 1fr;
+}
+
+.tip-card {
+    min-height: 130px;
+}
+
+/*
+--------------------------------------------------
+                    Final CTA
+--------------------------------------------------
+*/
+
+.final-cta-section {
+    padding-block: 70px;
+}
+
+.final-cta {
+    padding: 55px 22px;
+}
+
+}
+
+/*
+==================================================
+==================================================
+                  SMALL MOBILE
+==================================================
+==================================================
+*/
+
+@media (max-width: 420px) {
+
+    .home-hero {
+        padding-top: 54px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.55rem;
+    }
+
+    .hero-description {
+        font-size: 0.86rem;
+    }
+
+    .path-grid {
+        gap: 8px;
+    }
+
+    .path-card {
+        min-height: 145px;
+
+        padding: 15px;
+    }
+
+    .path-number {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 10px;
+    }
+
+    .path-content h3 {
+        font-size: 0.92rem;
+    }
+
+    .path-content p {
+        font-size: 0.64rem;
+    }
+
+    .subject-card {
+        grid-template-columns: auto 1fr auto;
+
+        gap: 12px;
+    }
+
+    .subject-icon {
+        width: 44px;
+        height: 44px;
+
+        border-radius: 12px;
+    }
+
+    .subject-card h3 {
+        font-size: 1rem;
+    }
+
+    .subject-card p {
+        font-size: 0.68rem;
+    }
+
+    .final-cta h2 {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+    
